@@ -1,3 +1,4 @@
+Commands();
 string[] array = new string[] {};
 
 string fromUser = ReadInput("Введите команду: ");
@@ -16,7 +17,6 @@ switch (fromUser)
         Console.WriteLine($"{fromUser} - Такой команды нет");
         break;
 }
-
 
 int lenNewArray = 0;
 for (int i = 0; i <= array.Length - 1; i++)
@@ -40,7 +40,6 @@ PrintArray(array);
 Console.Write("→ ");
 PrintArray(newArray);
 
-// Функция: Вывод команд для работы с программой
 void Commands()
 {
     Console.WriteLine();
@@ -51,14 +50,11 @@ void Commands()
     Console.WriteLine();
 }
 
-// Функция ввода
 string ReadInput(string msg)
 {
     Console.Write(msg);
     return Console.ReadLine();
 }
-
-//  Функция вывода массива в терминал
 void PrintArray(string[] array)
 {
     Console.Write("[ ");
